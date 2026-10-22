@@ -27,9 +27,16 @@ function Home() {
           <p className="lead">
             A modern web experience built with React.
           </p>
-          <a href="#resources" className="btn btn-light mt-3">
-            Explore Resources
-          </a>
+          <button
+  className="btn btn-light mt-3"
+  onClick={() =>
+    document.getElementById('resources')?.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+>
+  Explore Resources
+</button>
         </div>
       </section>
 
