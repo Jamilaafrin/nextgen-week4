@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Link
@@ -89,7 +89,7 @@ function About() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="navbar navbar-expand navbar-dark bg-dark px-3 px-md-5">
         <Link to="/" className="navbar-brand fw-bold">
           LearnSpace
@@ -115,7 +115,7 @@ function App() {
           © 2026 LearnSpace | NextGen Internship Project
         </small>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
